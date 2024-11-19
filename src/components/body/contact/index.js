@@ -6,7 +6,7 @@ import ContactForm from "./contactForm";
 
 export default function Contact() {
 	return (
-		<div className="contact">
+		<section id="contact">
 			<h2>Contact</h2>
 			<div id="contactBox">
 				<div id="contactFormBox">
@@ -16,6 +16,6 @@ export default function Contact() {
 			</div>
 			<span>Want to get in touch? Contact me on any platform.</span>
 			<SocialArray />
-		</div>
+		</section>
 	);
 }

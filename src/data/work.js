@@ -1,6 +1,6 @@
 const companyLogoPath = "assets/workMedia/";
 
-export const work = [
+const work = [
 	{
 		companyName: "Octopus Energy",
 		type: "Internship",
@@ -18,3 +18,5 @@ export const work = [
 		companyLogo: companyLogoPath + "octopus.png",
 	},
 ];
+
+export default work;

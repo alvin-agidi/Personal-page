@@ -1,6 +1,6 @@
 const projectImagePath = "assets/projectMedia/";
 
-export const projects = [
+const projects = [
 	{
 		title: "ACTIV",
 		desc: "ACTIV is a fitness and sports-focused social media app aimed at distributing fitness advice from professionals to the less-experienced gym-goer and athletes. The app uses machine learning to analyse and label videos with the exercises being performed within them. PTs can track their clients using messaging and dedicated client overview pages.",
@@ -29,3 +29,5 @@ export const projects = [
 		github: "https://github.com/alvin-agidi/alvin-agidi.github.io",
 	},
 ];
+
+export default projects;

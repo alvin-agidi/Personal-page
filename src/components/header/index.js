@@ -4,16 +4,18 @@ import "./header.css";
 import { useState } from "react";
 
 export default function Header() {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div className="header">
+			<div id="fullMenu">
+				<Menu />
+			</div>
+			<div id="mobileMenu">{isOpen && <Menu />}</div>
 			<i
 				className="far fa-bars"
-				id="openSidebarIcon"
+				id="openMenuIcon"
 				onClick={() => setIsOpen(!isOpen)}
 			/>
-			{isOpen && <Menu />}
-			{/* {isOpen && <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />} */}
 		</div>
 	);
 }

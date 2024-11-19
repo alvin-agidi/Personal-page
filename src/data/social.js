@@ -1,4 +1,4 @@
-export const SocialData = [
+const socialData = [
 	{
 		platform: "linkedin",
 		link: "https://www.linkedin.com/in/alvin-agidi-637b7b20a/",
@@ -15,3 +15,5 @@ export const SocialData = [
 		icon: "fas fa-envelope-square socialIcon",
 	},
 ];
+
+export default socialData;

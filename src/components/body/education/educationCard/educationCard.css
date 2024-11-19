@@ -1,0 +1,46 @@
+.educationCard {
+	flex: 1;
+	display: flex;
+	border-radius: 12px;
+	gap: 12px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#schoolLogo {
+	display: flex;
+	height: 80px;
+	width: 80px;
+	align-items: center;
+	border-radius: 8px;
+}
+
+.educationCard img {
+	width: 80px;
+}
+
+#educationHeader {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 8px;
+}
+
+#educationInfo {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.educationDates {
+	color: var(--text);
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+	.educationCard {
+		padding: 6px;
+	}
+}

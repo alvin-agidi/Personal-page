@@ -1,26 +1,26 @@
 import React from "react";
 import "./workCard.css";
 
-export default function WorkCard({ item }) {
+export default function WorkCard({ work }) {
 	return (
 		<div className="workCard">
 			<div id="workHeader">
 				<img
 					id="workLogo"
-					src={item.companyLogo}
+					src={work.companyLogo}
 					alt="companyLogo"
 				></img>
 				<div id="workInfo">
-					<h3>{item.companyName}</h3>
+					<h3>{work.companyName}</h3>
 					<span>
-						{item.role} • {item.type}
+						{work.role} • {work.type}
 					</span>
 					<label className="workDates">
-						{item.startDate} - {item.endDate} ({item.duration})
+						{work.startDate} - {work.endDate} ({work.duration})
 					</label>
 				</div>
 			</div>
-			{item.roleDesc.map((line) => (
+			{work.roleDesc.map((line) => (
 				<span id="workDesc">• {line}</span>
 			))}
 		</div>

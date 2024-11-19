@@ -1,24 +1,16 @@
-.contact {
+#contact {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
 	gap: 16px;
 }
 
-#contactBox {
-	display: flex;
-	flex: 1;
-	gap: 16px;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.contact span {
+#contact span {
 	text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-	.contact {
+	#contact {
 		width: 100%;
 		justify-content: center;
 		align-items: center;
