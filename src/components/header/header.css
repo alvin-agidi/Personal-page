@@ -1,0 +1,45 @@
+.header {
+	display: flex;
+	background-color: var(--red);
+	justify-content: space-between;
+	border-radius: 0 0 12px 12px;
+	padding: 6px 16vw;
+	align-items: center;
+	overflow: visible;
+}
+
+#logoPic {
+	margin: 0px;
+	height: 36px;
+}
+
+#openSidebarIcon {
+	display: none;
+	font-size: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.header {
+		padding: 6px 12vw;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.header {
+		padding: 6px 6vw;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	#logoText {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.header {
+		padding: 6px 5vw;
+	}
+}

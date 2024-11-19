@@ -1,0 +1,10 @@
+.work{
+    display: flex;
+}
+
+#workList{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,28 @@
+button {
+	background-color: var(--blue);
+	display: flex;
+	padding: 12px 24px;
+	border-radius: 9999px;
+	font-family: inherit;
+	gap: 5px;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	color: var(--bg);
+	text-decoration: none;
+}
+
+button:hover {
+	background-color: var(--purple);
+	transition: .1s ease;
+}
+
+button a {
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+button i {
+	margin-right: 8px;
+}

@@ -1,0 +1,44 @@
+.socialArray {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0 12vw;
+	gap: 5px;
+}
+
+.socialIcon {
+	text-decoration: none;
+	font-size: 40px;
+}
+
+.fa-linkedin {
+	color: #2867B2;
+}
+
+.fa-envelope-square {
+	color: #B23121;
+}
+
+.fa-github-square {
+	color: #6e5494;
+}
+
+.fa-facebook-square {
+	color: #4267B2;
+}
+
+.fa-twitter-square {
+	color: #1DA1F2;
+}
+
+.socialIcon:hover {
+	color: var(--text);
+	transform: 0.1s;
+}
+
+@media only screen and (max-width: 1024px) {
+	.socialIcon {
+		font-size: 30px;
+	}
+}
