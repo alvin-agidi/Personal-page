@@ -3,7 +3,6 @@ import "./projectCard.css";
 import Button from "../../../common/button";
 
 function ProjectCard({ project }) {
-	console.log(project.image);
 	return (
 		<div className="projectCard">
 			<div className="projectInfo">
@@ -18,8 +17,8 @@ function ProjectCard({ project }) {
 					)}
 					{project.github && (
 						<Button
-							onPress={() =>
-								(window.location.href = project.github)
+							onClick={() =>
+								window.open(project.github, "_blank")
 							}
 							text="Github"
 							icon="fab fa-github"

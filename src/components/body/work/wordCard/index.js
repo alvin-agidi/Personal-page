@@ -2,7 +2,6 @@ import React from "react";
 import "./workCard.css";
 
 export default function WorkCard({ item }) {
-	console.log(item.companyLogo);
 	return (
 		<div className="workCard">
 			<div id="workHeader">
