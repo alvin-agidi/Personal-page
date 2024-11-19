@@ -9,10 +9,10 @@ export default function ContactForm() {
 
 		emailjs
 			.sendForm(
-				"service_3ivb4f4",
-				"template_j2igdjo",
+				"service_hwg38dd",
+				"template_a1qmoti",
 				e.target,
-				"user_mVikwZpqH6OxKLJAC1QHV"
+				"PfPiNk0uM4DV-Dq-L"
 			)
 			.then(
 				(result) => {
@@ -25,29 +25,29 @@ export default function ContactForm() {
 	};
 
 	return (
-		<div className="contactFormBox">
+		<form onSubmit={sendEmail} id="contactForm">
 			<h3>Email Me</h3>
-			<form onSubmit={sendEmail} className="contactForm">
-				<input type="text" placeholder="Name" name="senderName" />
-				<input
-					type="email"
-					placeholder="Your email address"
-					name="email"
-				/>
-				<input type="text" placeholder="Subject" name="subject" />
-				<textarea
-					cols="40"
-					rows="5"
-					type="text"
-					placeholder="Your message"
-					name="message"
-				></textarea>
-				<Button
-					type="submit"
-					text="Send message"
-					icon="far fa-paper-plane"
-				/>
-			</form>
-		</div>
+			<input type="text" placeholder="Name" name="senderName" required />
+			<input
+				type="email"
+				placeholder="Your email address"
+				name="email"
+				required
+			/>
+			<input type="text" placeholder="Subject" name="subject" required />
+			<textarea
+				rows={5}
+				cols={50}
+				type="text"
+				placeholder="Your message"
+				name="message"
+				required
+			></textarea>
+			<Button
+				type="submit"
+				text="Send message"
+				icon="far fa-paper-plane"
+			/>
+		</form>
 	);
 }

@@ -24,7 +24,7 @@ const projects = [
 	},
 	{
 		title: "Personal page",
-		desc: "My personal page",
+		desc: "This personal page",
 		tags: ["React", "JavaScript", "GitHub Pages"],
 		github: "https://github.com/alvin-agidi/alvin-agidi.github.io",
 	},

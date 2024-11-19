@@ -9,9 +9,7 @@ export default function Contact() {
 		<section id="contact">
 			<h2>Contact</h2>
 			<div id="contactBox">
-				<div id="contactFormBox">
-					<ContactForm />
-				</div>
+				<ContactForm />
 				<Button text="Download my CV" icon="far fa-file-download" />
 			</div>
 			<span>Want to get in touch? Contact me on any platform.</span>

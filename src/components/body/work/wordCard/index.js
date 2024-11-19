@@ -21,7 +21,9 @@ export default function WorkCard({ work }) {
 				</div>
 			</div>
 			{work.roleDesc.map((line) => (
-				<span id="workDesc">• {line}</span>
+				<span id="workDesc" key={line}>
+					• {line}
+				</span>
 			))}
 		</div>
 	);
