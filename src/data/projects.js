@@ -1,3 +1,5 @@
+const projectImagePath = "assets/projectMedia/";
+
 export const projects = [
 	{
 		title: "ACTIV",
@@ -11,7 +13,7 @@ export const projects = [
 			"TensorFlow",
 			"Flask",
 		],
-		image: "https://github.com/alvin-agidi/CodeLux/assets/63751335/a2a966db-78c5-482c-8d44-920b376646d4",
+		image: projectImagePath + "activ.png",
 	},
 	{
 		title: "CodeLux",

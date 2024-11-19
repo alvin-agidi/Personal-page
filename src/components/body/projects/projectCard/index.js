@@ -3,6 +3,7 @@ import "./projectCard.css";
 import Button from "../../../common/button";
 
 function ProjectCard({ project }) {
+	console.log(project.image);
 	return (
 		<div className="projectCard">
 			<div className="projectInfo">

@@ -2,7 +2,6 @@ import React from "react";
 import Menu from "./menu";
 import "./header.css";
 import { useState } from "react";
-import Sidebar from "../sidebar/index";
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(true);
