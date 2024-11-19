@@ -1,7 +1,7 @@
 import React from "react";
 import "./menu.css";
 
-function Menu() {
+export default function Menu() {
 	return (
 		<div id="menu">
 			<div className="menuOption" id="projectsOption">
@@ -27,5 +27,3 @@ function Menu() {
 		</div>
 	);
 }
-
-export default Menu;

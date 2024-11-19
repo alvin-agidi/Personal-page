@@ -3,9 +3,9 @@
 	display: flex;
 	border-radius: 12px;
 	gap: 12px;
-	flex-direction: row-reverse;
+	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 #workLogo {
@@ -13,21 +13,29 @@
 	height: 80px;
 	width: 80px;
 	align-items: center;
-	border-radius: 5px;
+	border-radius: 8px;
 }
 
 .workCard img {
 	width: 80px;
 }
 
+#workHeader {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 8px;
+}
+
 #workInfo {
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
+	gap: 4px;
 }
 
 .workDates {
-	color: rgb(190, 190, 190);
+	color: var(--text);
 	font-size: 16px;
 }
 

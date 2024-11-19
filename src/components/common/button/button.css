@@ -1,10 +1,10 @@
 button {
 	background-color: var(--blue);
 	display: flex;
-	padding: 12px 24px;
+	padding: 12px;
 	border-radius: 9999px;
 	font-family: inherit;
-	gap: 5px;
+	gap: 4px;
 	align-items: center;
 	justify-content: center;
 	border: none;

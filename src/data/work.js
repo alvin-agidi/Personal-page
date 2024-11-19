@@ -2,7 +2,7 @@ export const work = [
 	{
 		companyName: "Octopus Energy",
 		type: "Internship",
-		duration: "1 week",
+		duration: "3 Months",
 		role: "Backend Developer",
 		startDate: "June 2023",
 		endDate: "September 2023",

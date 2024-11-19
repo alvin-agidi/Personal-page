@@ -4,18 +4,23 @@ import "./workCard.css";
 export default function WorkCard({ item }) {
 	return (
 		<div className="workCard">
-			<div id="workLogo">
-				<img src={item.companyLogo} alt="companyLogo"></img>
+			<div id="workHeader">
+				<img
+					id="workLogo"
+					src={item.companyLogo}
+					alt="companyLogo"
+				></img>
+				<div id="workInfo">
+					<h3>{item.companyName}</h3>
+					<span>
+						{item.role} • {item.type}
+					</span>
+					<label className="workDates">
+						{item.startDate} - {item.endDate} ({item.duration})
+					</label>
+				</div>
 			</div>
-			<div id="workInfo">
-				<h3>{item.companyName}</h3>
-				<span>{item.role}</span>
-				<span>{item.type}</span>
-				<label className="workDates">
-					{item.startDate} - {item.endDate} ({item.duration})
-				</label>
-				<p id="workDesc">{item.roleDesc}</p>
-			</div>
+			<span id="workDesc">{item.roleDesc}</span>
 		</div>
 	);
 }

@@ -1,11 +1,13 @@
 .body {
-	padding: 12px 16vw 36px 16vw;
+	padding: 0px 16vw;
+	padding-bottom: 36px;
 	align-items: center;
 	justify-content: center;
 }
 
 h1 {
 	text-align: center;
+	font-size: 48px;
 	font-weight: 800;
 }
 
@@ -15,23 +17,26 @@ h2 {
 }
 
 h3 {
+	text-align: center;
 	font-weight: 600;
+	padding: 0px;
+	margin: 0px;
 }
 
 @media only screen and (max-width: 1024px) {
 	.body {
-		padding: 0 12vw;
+		padding: 0px 12vw;
 	}
 }
 
 @media only screen and (max-width: 768px) {
 	.body {
-		padding: 0 6vw;
+		padding: 0px 6vw;
 	}
 }
 
 @media only screen and (max-width: 640px) {
 	.body {
-		padding: 0 3vw;
+		padding: 0px 3vw;
 	}
 }
