@@ -21,7 +21,9 @@ export default function WorkCard({ item }) {
 					</label>
 				</div>
 			</div>
-			<span id="workDesc">{item.roleDesc}</span>
+			{item.roleDesc.map((line) => (
+				<span id="workDesc">• {line}</span>
+			))}
 		</div>
 	);
 }

@@ -18,13 +18,15 @@ function ProjectCard({ project }) {
 					)}
 					{project.github && (
 						<Button
-							href={project.github}
+							onPress={() =>
+								(window.location.href = project.github)
+							}
 							text="Github"
 							icon="fab fa-github"
 						/>
 					)}
 				</div>
-				<span>{project.about}</span>
+				<span>{project.desc}</span>
 				<div className="projectTagBox">
 					{project.tags.map((tag) => (
 						<label className="projectTag" key={tag}>
@@ -33,13 +35,15 @@ function ProjectCard({ project }) {
 					))}
 				</div>
 			</div>
-			<div className="imgZoomBox">
-				<img
-					src={project.image}
-					className="projectImg"
-					alt="projectImg"
-				/>
-			</div>
+			{project.image && (
+				<div className="imgZoomBox">
+					<img
+						src={project.image}
+						className="projectImg"
+						alt="projectImg"
+					/>
+				</div>
+			)}
 		</div>
 	);
 }
