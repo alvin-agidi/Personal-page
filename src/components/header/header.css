@@ -1,10 +1,18 @@
-.header {
+#header {
 	display: flex;
 	background-color: var(--red);
 	border-radius: 0 0 12px 12px;
 	padding: 8px 16vw;
 	align-items: center;
 	justify-items: center;
+	position: sticky;
+	top: 0;
+}
+
+#header h2 {
+	color: var(--bg);
+	margin: 0;
+	padding: 0;
 }
 
 #openMenuIcon {
@@ -24,15 +32,19 @@
 }
 
 @media only screen and (max-width: 1024px) {
-	.header {
+	#header {
 		padding: 8px 12vw;
-		align-items: flex-start;
 	}
 }
 
 @media only screen and (max-width: 768px) {
-	.header {
+	#header {
 		padding: 16px;
+		align-items: flex-start;
+	}
+
+	#header h2 {
+		text-align: center;
 	}
 
 	#openMenuIcon {

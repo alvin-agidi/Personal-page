@@ -9,7 +9,7 @@
 	--text: #161616;
 }
 
-.home {
+#home {
 	display: flex;
 	flex-direction: column;
 	height: max-content;

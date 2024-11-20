@@ -5,7 +5,7 @@ import Body from "../body/index";
 
 function Home() {
 	return (
-		<div className="home">
+		<div id="home">
 			<Header />
 			<Body />
 		</div>

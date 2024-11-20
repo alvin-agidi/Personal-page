@@ -6,7 +6,8 @@ import { useState } from "react";
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<div className="header">
+		<div id="header">
+			<h2>Alvin Agidi</h2>
 			<div id="fullMenu">
 				<Menu />
 			</div>

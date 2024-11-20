@@ -1,4 +1,7 @@
 #body {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
 	padding: 0px 16vw;
 	padding-bottom: 36px;
 	align-items: center;
@@ -9,11 +12,14 @@ h1 {
 	text-align: center;
 	font-size: 48px;
 	font-weight: 800;
+	margin-bottom: 0px;
 }
 
 h2 {
 	text-align: center;
 	font-weight: 700;
+	padding: 0px;
+	margin: 0px;
 }
 
 h3 {
