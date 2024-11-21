@@ -4,8 +4,19 @@ import Button from "../../../common/button";
 
 function ProjectCard({ project }) {
 	return (
-		<div className="projectCard">
-			<div className="projectInfo">
+		<div
+			className="projectCard"
+			style={{
+				backgroundImage: project.image
+					? `url(${project.image})`
+					: "none",
+			}}
+		>
+			<div
+				className={
+					"projectInfo" + (project.image ? " hoverEffect" : "")
+				}
+			>
 				<h3>{project.title}</h3>
 				<div className="projectLinkBox">
 					{project.demo && (
@@ -14,15 +25,6 @@ function ProjectCard({ project }) {
 								<i className="far fa-globe"></i>Demo
 							</div>
 						</a>
-					)}
-					{project.github && (
-						<Button
-							onClick={() =>
-								window.open(project.github, "_blank")
-							}
-							text="Github"
-							icon="fab fa-github"
-						/>
 					)}
 				</div>
 				<p>{project.desc}</p>
@@ -34,14 +36,12 @@ function ProjectCard({ project }) {
 					))}
 				</div>
 			</div>
-			{project.image && (
-				<div className="imgZoomBox">
-					<img
-						src={project.image}
-						className="projectImg"
-						alt="projectImg"
-					/>
-				</div>
+			{project.github && (
+				<Button
+					onClick={() => window.open(project.github, "_blank")}
+					text="GitHub"
+					icon="fab fa-github"
+				/>
 			)}
 		</div>
 	);

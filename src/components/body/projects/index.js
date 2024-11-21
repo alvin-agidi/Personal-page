@@ -7,9 +7,11 @@ export default function Projects() {
 	return (
 		<section id="projects">
 			<h2>Projects</h2>
-			{projects.map((project) => (
-				<ProjectCard project={project} key={project.title} />
-			))}
+			<div id="projectList">
+				{projects.map((project) => (
+					<ProjectCard project={project} key={project.title} />
+				))}
+			</div>
 		</section>
 	);
 }
