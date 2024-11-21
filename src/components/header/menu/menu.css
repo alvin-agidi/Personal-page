@@ -15,6 +15,7 @@
 
 .menuOption a {
 	text-decoration: none;
+	text-align: center;
 	font-size: 20px;
 	color: var(--bg);
 	font-weight: 700;

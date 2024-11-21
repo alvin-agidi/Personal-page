@@ -38,19 +38,22 @@ p {
 
 
 @media only screen and (max-width: 1024px) {
-	.body {
+	#body {
 		padding: 0px 12vw;
+		padding-bottom: 36px;
 	}
 }
 
 @media only screen and (max-width: 768px) {
-	.body {
+	#body {
 		padding: 0px 6vw;
+		padding-bottom: 36px;
 	}
 }
 
 @media only screen and (max-width: 640px) {
-	.body {
+	#body {
 		padding: 0px 3vw;
+		padding-bottom: 36px;
 	}
 }

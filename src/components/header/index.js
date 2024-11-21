@@ -7,11 +7,17 @@ export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div id="header">
-			<h2>Alvin Agidi</h2>
-			<div id="fullMenu">
-				<Menu />
+			<div id="menuBox">
+				<h2>Alvin Agidi</h2>
+				<div id="fullMenu">
+					<Menu />
+				</div>
+				{isOpen && (
+					<div id="mobileMenu">
+						<Menu />
+					</div>
+				)}
 			</div>
-			<div id="mobileMenu">{isOpen && <Menu />}</div>
 			<i
 				className="far fa-bars"
 				id="openMenuIcon"
