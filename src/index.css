@@ -1,8 +1,10 @@
-body {
+body,
+html {
 	margin: 0;
 	font-family: 'Quicksand';
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
 }
 
 code {

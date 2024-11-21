@@ -37,7 +37,6 @@ export default function ContactForm() {
 			<input type="text" placeholder="Subject" name="subject" required />
 			<textarea
 				rows={5}
-				cols={50}
 				type="text"
 				placeholder="Your message"
 				name="message"

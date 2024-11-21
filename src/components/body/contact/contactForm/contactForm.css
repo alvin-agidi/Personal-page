@@ -1,15 +1,16 @@
 #contactForm {
-	display: inline-flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 8px;
-	max-width: 50%;
+	flex: 1;
 }
 
 #contactForm input[type=text],
 #contactForm input[type=email],
 textarea {
+	display: flex;
 	background-color: var(--bg);
 	text-decoration: none;
 	font-family: inherit;
@@ -18,6 +19,7 @@ textarea {
 	border: solid var(--purple);
 	border-radius: 20px;
 	align-self: stretch;
+	flex: 1;
 	resize: vertical;
 	color: var(--text);
 }
@@ -27,10 +29,4 @@ textarea {
 #contactForm input[type=email]:focus {
 	border: solid var(--blue);
 	transition: border .1s ease;
-}
-
-@media only screen and (max-width: 1024px) {
-	#contactForm {
-		width: 100%;
-	}
 }

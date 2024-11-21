@@ -18,6 +18,3 @@
 	color: var(--text);
 }
 
-html {
-	scroll-behavior: smooth;
-}
