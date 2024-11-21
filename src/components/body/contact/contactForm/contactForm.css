@@ -16,7 +16,7 @@ textarea {
 	font-family: inherit;
 	padding: 6px 12px;
 	font-size: 16px;
-	border: solid var(--purple);
+	border: solid var(--blue);
 	border-radius: 20px;
 	align-self: stretch;
 	flex: 1;
@@ -24,9 +24,16 @@ textarea {
 	color: var(--text);
 }
 
+
+#contactForm input[type=text]:focus,
+#contactForm input[type=email]:focus,
+textarea:focus {
+	outline: none;
+}
+
 #contactForm textarea:focus,
 #contactForm input[type=text]:focus,
 #contactForm input[type=email]:focus {
-	border: solid var(--blue);
+	border: solid var(--purple);
 	transition: border .1s ease;
 }
