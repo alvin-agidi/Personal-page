@@ -1,32 +1,37 @@
 #menu {
 	display: flex;
-	gap: 18px;
-	flex: 1;
+	gap: 4px;
 	align-items: center;
-	justify-content: flex-end;
-	padding: 18px;
+	align-self: stretch;
+	border-radius: 36px;
+	background-color: var(--blue);
+	padding: 8px;
+	overflow: hidden;
 }
 
 .menuOption {
-	display: inline-block;
-	position: relative;
+	display: flex;
 	color: var(--text);
-}
-
-.menuOption a {
+	background-color: var(--blue);
+	border-radius: 24px;
+	z-index: 2;
 	text-decoration: none;
 	text-align: center;
-	font-size: 20px;
+	/* font-size: 20px; */
 	color: var(--bg);
 	font-weight: 700;
 	display: flex;
-	gap: 5px;
+	padding: 8px;
+	gap: 8px;
 	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.menuOption:hover a {
-	color: var(--blue);
-	transition: color .1s ease;
+.menuOption:hover {
+	background-color: var(--red);
+	transition: background-color .5s ease;
 }
 
 .menuIcon {
@@ -36,18 +41,23 @@
 
 
 @media only screen and (max-width: 1024px) {
-	#projectsOption {
-		display: none;
+	.menuOption {
+		font-size: 12px;
 	}
 }
 
 @media only screen and (max-width: 768px) {
 	#menu {
 		flex-direction: column;
+		align-items: stretch;
+		flex: 1;
+		border-radius: 0 0 20px 20px;
+		padding-top: 40px;
 	}
 
-	#projectsOption {
-		display: flex;
-	}
+
+	/* #contactOption {
+									display: flex;
+								} */
 
 }

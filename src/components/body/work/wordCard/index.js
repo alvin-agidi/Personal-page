@@ -4,13 +4,13 @@ import "./workCard.css";
 export default function WorkCard({ work }) {
 	return (
 		<div className="workCard">
-			<div id="workHeader">
+			<div className="workHeader">
 				<img
-					id="workLogo"
+					className="workLogo"
 					src={work.companyLogo}
 					alt="companyLogo"
 				></img>
-				<div id="workInfo">
+				<div className="workInfo">
 					<h3>{work.company}</h3>
 					<span>
 						{work.role} • {work.type}

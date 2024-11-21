@@ -2,27 +2,29 @@ import React from "react";
 import Menu from "./menu";
 import "./header.css";
 import { useState } from "react";
+import { Squash as Hamburger } from "hamburger-react";
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<div id="header">
-			<div id="menuBox">
+		<div id="headerBox">
+			<div id="header">
 				<h2>Alvin Agidi</h2>
 				<div id="fullMenu">
 					<Menu />
 				</div>
-				{isOpen && (
-					<div id="mobileMenu">
-						<Menu />
-					</div>
-				)}
+				<div id="toggleMenuIcon">
+					<Hamburger
+						toggled={isOpen}
+						toggle={setIsOpen}
+						size={24}
+						rounded
+					/>
+				</div>
 			</div>
-			<i
-				className="far fa-bars"
-				id="openMenuIcon"
-				onClick={() => setIsOpen(!isOpen)}
-			/>
+			<div id="mobileMenu" className={isOpen ? "open" : "closed"}>
+				<Menu />
+			</div>
 		</div>
 	);
 }

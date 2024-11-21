@@ -8,26 +8,30 @@
 	align-items: flex-start;
 }
 
-#workLogo {
-	display: flex;
+.workLogo {
 	height: 80px;
 	width: 80px;
+	max-height: 80px;
+	max-width: 80px;
 	align-items: center;
 	border-radius: 8px;
+	background-color: white;
+	object-fit: cover;
+	display: block;
 }
 
 .workCard img {
 	width: 80px;
 }
 
-#workHeader {
+.workHeader {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
 	gap: 8px;
 }
 
-#workInfo {
+.workInfo {
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
