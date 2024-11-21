@@ -4,24 +4,22 @@ import "./educationCard.css";
 export default function EducationCard({ education }) {
 	return (
 		<div className="educationCard">
-			<div id="educationHeader">
-				<img
-					id="schoolLogo"
-					src={education.schoolLogo}
-					alt="schoolLogo"
-				></img>
-				<div id="educationInfo">
+			<div className="educationHeader">
+				<div className="schoolLogo">
+					<img src={education.schoolLogo} alt="schoolLogo" />
+				</div>
+				<div className="educationInfo">
 					<h3>{education.school}</h3>
 					<span>{education.title}</span>
 					<span>{education.grade}</span>
-					<span className="educationDates">
+					<span>
 						{education.startDate} - {education.endDate} (
 						{education.duration})
 					</span>
 				</div>
 			</div>
 			{education.desc.map((line) => (
-				<span id="educationDesc">• {line}</span>
+				<span className="educationDesc">• {line}</span>
 			))}
 		</div>
 	);
