@@ -33,5 +33,5 @@
 
 .socialIcon:hover {
 	color: var(--text);
-	transform: 0.1s;
+	transform: 0.2s;
 }
