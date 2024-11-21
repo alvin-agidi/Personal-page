@@ -29,7 +29,8 @@
 	box-sizing: border-box;
 }
 
-.hoverEffect:hover {
+.hoverEffect:hover,
+.hoverEffect:focus {
 	opacity: 0;
 	transition: 0.5s ease;
 }
