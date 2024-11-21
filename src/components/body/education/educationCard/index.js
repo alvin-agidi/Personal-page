@@ -14,10 +14,10 @@ export default function EducationCard({ education }) {
 					<h3>{education.school}</h3>
 					<span>{education.title}</span>
 					<span>{education.grade}</span>
-					<label className="educationDates">
+					<span className="educationDates">
 						{education.startDate} - {education.endDate} (
 						{education.duration})
-					</label>
+					</span>
 				</div>
 			</div>
 			{education.desc.map((line) => (

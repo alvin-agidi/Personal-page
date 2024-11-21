@@ -24,7 +24,8 @@
 }
 
 .menuOption:hover a {
-	color: var(--text);
+	color: var(--blue);
+	transition: color .1s ease;
 }
 
 .menuIcon {

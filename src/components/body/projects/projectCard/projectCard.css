@@ -6,9 +6,6 @@
 	gap: 8px;
 }
 
-.projectCard span {
-	line-height: 32px;
-}
 
 .projectInfo {
 	display: flex;

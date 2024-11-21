@@ -16,15 +16,13 @@ export default function WorkCard({ work }) {
 						{work.role} • {work.type}
 					</span>
 					<span>{work.location}</span>
-					<label className="workDates">
+					<span className="workDates">
 						{work.startDate} - {work.endDate} ({work.duration})
-					</label>
+					</span>
 				</div>
 			</div>
 			{work.roleDesc.map((line) => (
-				<span id="workDesc" key={line}>
-					• {line}
-				</span>
+				<span key={line}>• {line}</span>
 			))}
 		</div>
 	);
