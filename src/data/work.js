@@ -2,7 +2,8 @@ const companyLogoPath = "assets/workMedia/";
 
 const work = [
 	{
-		companyName: "Octopus Energy",
+		company: "Octopus Energy",
+		location: "London, United Kingdom",
 		type: "Internship",
 		duration: "3 Months",
 		role: "Backend Developer",

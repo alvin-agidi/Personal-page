@@ -11,10 +11,11 @@ export default function WorkCard({ work }) {
 					alt="companyLogo"
 				></img>
 				<div id="workInfo">
-					<h3>{work.companyName}</h3>
+					<h3>{work.company}</h3>
 					<span>
 						{work.role} • {work.type}
 					</span>
+					<span>{work.location}</span>
 					<label className="workDates">
 						{work.startDate} - {work.endDate} ({work.duration})
 					</label>
