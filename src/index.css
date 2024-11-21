@@ -35,4 +35,8 @@ code {
 	::-webkit-scrollbar {
 		width: 0px;
 	}
+
+	:target {
+		scroll-margin-top: 100px;
+	}
 }
