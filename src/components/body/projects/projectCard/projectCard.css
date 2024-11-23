@@ -1,86 +1,86 @@
-      @keyframes appear {
-      	from {
-      		opacity: 0;
-      		scale: 0.8;
-      	}
+@keyframes appear {
+	from {
+		opacity: 0;
+		scale: 0.8;
+	}
 
-      	to {
-      		opacity: 1;
-      		scale: 1;
-      	}
-      }
-
-
-      .projectCard {
-      	display: flex;
-      	flex: 1;
-      	justify-content: space-evenly;
-      	align-items: center;
-      	gap: 8px;
-      	background-size: contain;
-      	background-position: center;
-      	width: 100%;
-      	padding: 24px;
-      	flex-wrap: wrap;
-      	border-radius: 24px;
-      	background-color: white;
-      	box-sizing: border-box;
-      	animation: appear linear;
-      	animation-timeline: view(-18%);
-      	animation-range: entry 30%;
-      }
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
 
 
-      .projectInfo {
-      	display: flex;
-      	padding: 24px;
-      	align-items: center;
-      	width: 100%;
-      	flex-direction: column;
-      	gap: 8px;
-      	border-radius: 24px;
-      	background-color: rgb(255, 255, 255, 0.4);
-      	backdrop-filter: blur(10px);
-      	color: var(--text);
-      	box-sizing: border-box;
-      }
-
-      .hoverEffect:hover,
-      .hoverEffect:focus {
-      	opacity: 0;
-      	transition: 0.5s ease;
-      }
-
-      .projectInfo p {
-      	text-align: center;
-      }
+.projectCard {
+	display: flex;
+	flex: 1;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 8px;
+	background-size: contain;
+	background-position: center;
+	width: 100%;
+	padding: 24px;
+	flex-wrap: wrap;
+	border-radius: 24px;
+	background-color: white;
+	box-sizing: border-box;
+	animation: appear linear;
+	animation-timeline: view(-18%);
+	animation-range: entry 30%;
+}
 
 
-      .projectTagBox {
-      	display: flex;
-      	flex-wrap: wrap;
-      	align-items: center;
-      	justify-content: center;
-      	gap: 8px;
-      }
+.projectInfo {
+	display: flex;
+	padding: 24px;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+	gap: 8px;
+	border-radius: 24px;
+	background-color: rgb(255, 255, 255, 0.4);
+	backdrop-filter: blur(10px);
+	color: var(--text);
+	box-sizing: border-box;
+}
 
-      .projectTag {
-      	padding: 4px 8px;
-      	background-color: var(--purple);
-      	color: var(--bg);
-      	border-radius: 6px;
-      	font-size: 12px;
-      }
+.hoverEffect:hover,
+.hoverEffect:focus {
+	opacity: 0;
+	transition: 0.5s ease;
+}
 
-      @media only screen and (max-width: 1024px) {
-      	.projectCard {
-      		flex-direction: column;
-      	}
-      }
+.projectInfo p {
+	text-align: center;
+}
 
-      @media only screen and (max-width: 768px) {
-      	.projectLinkBox {
-      		align-items: center;
-      		justify-content: center;
-      	}
-      }
+
+.projectTagBox {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.projectTag {
+	padding: 4px 8px;
+	background-color: var(--purple);
+	color: var(--bg);
+	border-radius: 6px;
+	font-size: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.projectCard {
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.projectLinkBox {
+		align-items: center;
+		justify-content: center;
+	}
+}

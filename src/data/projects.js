@@ -3,7 +3,7 @@ const projectImagePath = "assets/projectMedia/";
 const projects = [
 	{
 		title: "ACTIV",
-		desc: "ACTIV is a fitness and sports-focused social media app aimed at distributing fitness advice from professionals to the less-experienced gym-goer and athletes. The app uses machine learning to analyse and label videos with the exercises being performed within them. PTs can track their clients using messaging and dedicated client overview pages.",
+		desc: "ACTIV is a fitness and sports-focused social media app that distributes fitness advice from professionals to less-experienced gym-goers and athletes. The app uses machine learning to analyse and label videos with the exercises being performed within them. PTs can track their clients using messaging and dedicated client overview pages.",
 		github: "https://github.com/alvin-agidi/3rdYrProject",
 		tags: [
 			"React Native",

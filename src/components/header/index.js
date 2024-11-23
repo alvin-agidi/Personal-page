@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "./menu";
 import "./header.css";
-import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 
 export default function Header() {
