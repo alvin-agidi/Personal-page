@@ -7,10 +7,14 @@ export default function SocialArray() {
 		<div className="socialArray">
 			{socialData.map((item) => {
 				return (
-					<a href={item.link} key={item.platform}>
-						<div className="SocialIcon">
-							<i className={item.icon}></i>
-						</div>
+					<a
+						className="SocialIcon"
+						href={item.link}
+						key={item.platform}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<i className={item.icon} />
 					</a>
 				);
 			})}
