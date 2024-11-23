@@ -17,6 +17,7 @@ export default function Header() {
 						toggled={isOpen}
 						toggle={setIsOpen}
 						size={24}
+						duration={0.3}
 						rounded
 					/>
 				</div>

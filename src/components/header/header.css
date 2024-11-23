@@ -34,26 +34,23 @@
 	color: var(--bg);
 }
 
-#fullMenu {
-	display: flex;
-}
-
 #mobileMenu {
 	display: none;
 	position: absolute;
 	width: 100%;
-	flex: 1;
 	align-items: center;
-	transition: top 0.3s ease-in-out;
+	transition: top 0.3s ease, background-color 0.3s ease;
+	border-radius: 0 0 20px 20px;
 	z-index: 4;
-
 }
 
 #mobileMenu.open {
+	background-color: var(--blue);
 	top: 48px;
 }
 
 #mobileMenu.closed {
+	background-color: var(--red);
 	top: -110px;
 }
 
