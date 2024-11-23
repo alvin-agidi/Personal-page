@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./contactForm.css";
 import Button from "../../../common/button";
 
 export default function ContactForm() {
-	const sendEmail = (e) => {
+	const [status, setStatus] = useState("");
+	const [statusBg, setStatusBg] = useState("var(--green)");
+	function sendEmail(e) {
+		setStatus("");
+		setStatusBg("var(--green)");
 		e.preventDefault();
 
 		emailjs
@@ -15,18 +19,24 @@ export default function ContactForm() {
 				"PfPiNk0uM4DV-Dq-L"
 			)
 			.then(
-				(result) => {
-					console.log(result.text);
+				() => {
+					setStatus("Email sent");
 				},
-				(error) => {
-					console.log(error.text);
+				() => {
+					setStatus("An error has occurred");
+					setStatusBg("var(--red)");
 				}
 			);
-	};
+	}
 
 	return (
 		<form onSubmit={sendEmail} id="contactForm">
 			<h3>Email Me</h3>
+			{status && (
+				<div id="statusBox" style={{ backgroundColor: statusBg }}>
+					{status}
+				</div>
+			)}
 			<input type="text" placeholder="Name" name="senderName" required />
 			<input
 				type="email"

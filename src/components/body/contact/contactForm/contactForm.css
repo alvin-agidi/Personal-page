@@ -4,7 +4,19 @@
 	align-items: center;
 	justify-content: center;
 	gap: 8px;
+	max-width: 50%;
 	flex: 1;
+}
+
+#statusBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: var(--bg);
+	flex: 1;
+	padding: 6px 12px;
+	border-radius: 20px;
 }
 
 #contactForm input[type=text],
