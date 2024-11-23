@@ -3,6 +3,16 @@
 	justify-content: center;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.iconArray {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
 	gap: 36px;
 }
 
@@ -23,15 +33,8 @@
 	color: #6e5494;
 }
 
-.fa-facebook-square {
-	color: #4267B2;
-}
-
-.fa-twitter-square {
-	color: #1DA1F2;
-}
 
 .socialIcon:hover {
 	color: var(--text);
-	transform: 0.2s;
+	transition: color 0.2s;
 }
