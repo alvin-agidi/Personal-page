@@ -9,7 +9,19 @@ export default function Contact() {
 			<h2>Contact</h2>
 			<div id="contactBox">
 				<ContactForm />
-				<Button text="Download my CV" icon="far fa-file-download" />
+				<div
+					id="CVBox"
+					style={{ backgroundImage: `url("assets/cv/cv.png")` }}
+				>
+					<a
+						href="assets/cv/cv.pdf"
+						target="_blank"
+						rel="noopener noreferrer"
+						style={{ textDecoration: "none" }}
+					>
+						<Button text="View my CV" icon="far fa-file" />
+					</a>
+				</div>
 			</div>
 		</section>
 	);

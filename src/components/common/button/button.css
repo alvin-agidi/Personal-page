@@ -14,7 +14,7 @@ button {
 
 button:hover {
 	background-color: var(--purple);
-	transition: .1s ease;
+	transition: 0.2s ease;
 	cursor: pointer;
 }
 
