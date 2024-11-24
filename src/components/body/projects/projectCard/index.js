@@ -39,7 +39,7 @@ function ProjectCard({ project }) {
 			{project.github && (
 				<Button
 					onClick={() => window.open(project.github, "_blank")}
-					text="GitHub"
+					text="View on GitHub"
 					icon="fab fa-github"
 				/>
 			)}

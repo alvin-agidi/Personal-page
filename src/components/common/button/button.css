@@ -4,7 +4,7 @@ button {
 	padding: 12px;
 	border-radius: 9999px;
 	font-family: inherit;
-	gap: 4px;
+	/* gap: 4px; */
 	align-items: center;
 	justify-content: center;
 	border: none;
