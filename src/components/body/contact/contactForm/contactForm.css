@@ -25,12 +25,12 @@
 #contactForm input[type=email],
 textarea {
 	display: flex;
-	background-color: var(--bg);
+	background-color: white;
 	text-decoration: none;
 	font-family: inherit;
 	padding: 6px 12px;
 	font-size: 16px;
-	border: solid var(--blue);
+	border: solid var(--blue) 2px;
 	border-radius: 20px;
 	align-self: stretch;
 	flex: 1;
@@ -48,6 +48,6 @@ textarea:focus {
 #contactForm textarea:focus,
 #contactForm input[type=text]:focus,
 #contactForm input[type=email]:focus {
-	border: solid var(--purple);
+	border: solid var(--purple) 2px;
 	transition: border .2s ease;
 }
